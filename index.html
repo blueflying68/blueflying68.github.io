@@ -1,0 +1,572 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+    <title>Ellis Web Design</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+    <link href='http://fonts.googleapis.com/earlyaccess/notosanstc.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/grid_style.css" />
+    <script src="script/jquery-1.11.0.min.js"></script>
+    <script src="script/modernizr-custom.js"></script>
+    <script>
+    $(document).ready(function() {
+        rwd_fun();
+        $(window).resize(rwd_fun);
+    });
+    function rwd_fun() {
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+        if (width > 1024) {
+            $('#logo').after($('#about'));
+        } else {
+            $('#works').before($('#about'));
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <a id="about-link" href="#about">ABOUT</a>
+    <div id="profile">
+        <div id="logo"><a href="index.html"><img src="images/logo.png" alt="Ellis Web Design" title="Ellis Web Design" align="absmiddle" /></a></div>
+        <div id="about" class="panel">
+            <div class="about-img"><img src="images/about_photo.jpg" alt="Ellis Lo" /></div>
+            <div class="about-info">
+                <h2>Ellis Lo</h2>
+                <div class="about-txt">
+                    <p>1979年生，景文技術學院銀行保險系業，無設計底子，卻憑著對設計的喜愛和自學，30歲毅然決然轉換設計跑道。</p>
+                    <p>網頁設計工作經歷6年多，現為半個網頁前端工程師，目前在威訊網路資訊有限公司任職。</p>
+                    <p>擅長網站視覺設計、HTML、CSS、JQuery、RWD、Sass，正在鑽研Git、Javascript。</p>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li>E-mail：<em>blueflying68@gmail.com</em></li>
+                        <li>LINE ID：<em>blueflying68</em></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-copy">© Ellis Web Design</div>
+        </div>
+    </div>
+    <div id="works">
+        <div class="works-title">WORKS </div>
+        <div class="grid">
+            <div class="grid__item" data-size="1030x1280"> <a href="images/profile/works-img001.jpg" class="img-wrap"><img src="images/profile/works-img001.jpg" alt="環球水泥" /></a>
+                <div class="description description--grid">
+                    <h3>環球水泥</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.ucctw.com/" target="blank">http://www.ucctw.com/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：進行中尚未完成</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1103x1280"> <a href="images/profile/works-img002.jpg" class="img-wrap"><img src="images/profile/works-img002.jpg" alt="塔吉特千層蛋糕" /></a>
+                <div class="description description--grid">
+                    <h3>塔吉特千層蛋糕</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="https://www.touched.com.tw/" target="blank">https://www.touched.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2018年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：美安網路中心</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x763"> <a href="images/profile/works-img003.jpg" class="img-wrap"><img src="images/profile/works-img003.jpg" alt="美女桌遊" /></a>
+                <div class="description description--grid">
+                    <h3>美女桌遊</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.mygoddess.com.tw/" target="blank">http://www.mygoddess.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1002x1280"> <a href="images/profile/works-img004.jpg" class="img-wrap"><img src="images/profile/works-img004.jpg" alt="馥瑄芝士蛋糕" /></a>
+                <div class="description description--grid">
+                    <h3>馥瑄芝士蛋糕</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="https://www.laforturn.com/" target="blank">https://www.laforturn.com/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：美安網路中心</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="865x1280"> <a href="images/profile/works-img034.jpg" class="img-wrap"><img src="images/profile/works-img034.jpg" alt="艾爾瑪國際產後護理籌備處" /></a>
+                <div class="description description--grid">
+                    <h3>艾爾瑪國際產後護理籌備處</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.elmaipnc.com/" target="blank">http://www.elmaipnc.com/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x1092"> <a href="images/profile/works-img005.jpg" class="img-wrap"><img src="images/profile/works-img005.jpg" alt="翰墨實業有限公司" /></a>
+                <div class="description description--grid">
+                    <h3>翰墨實業有限公司</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.highmore.com.tw/" target="blank">http://www.highmore.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="535x1280"> <a href="images/profile/works-img006.jpg" class="img-wrap"><img src="images/profile/works-img006.jpg" alt="酷亞整合行銷股份有限公司" /></a>
+                <div class="description description--grid">
+                    <h3>酷亞整合行銷股份有限公司</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.kuya.tw/" target="blank">http://www.kuya.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x879"> <a href="images/profile/works-img007.jpg" class="img-wrap"><img src="images/profile/works-img007.jpg" alt="順悅科技有限公司" /></a>
+                <div class="description description--grid">
+                    <h3>順悅科技有限公司</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.sun-yes.com.tw/" target="blank">http://www.sun-yes.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="641x1280"> <a href="images/profile/works-img008.jpg" class="img-wrap"><img src="images/profile/works-img008.jpg" alt="勞倫斯 LAWRENCE" /></a>
+                <div class="description description--grid">
+                    <h3>勞倫斯 LAWRENCE</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.lawrencehair.com/" target="blank">http://www.lawrencehair.com/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x1082"> <a href="images/profile/works-img009.jpg" class="img-wrap"><img src="images/profile/works-img009.jpg" alt="長虹建設股份有限公司" /></a>
+                <div class="description description--grid">
+                    <h3>長虹建設股份有限公司</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.chonghong.com.tw/" target="blank">http://www.chonghong.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x1133"> <a href="images/profile/works-img010.jpg" class="img-wrap"><img src="images/profile/works-img010.jpg" alt="波波小姐" /></a>
+                <div class="description description--grid">
+                    <h3>波波小姐</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="https://www.bobobra.com/" target="blank">https://www.bobobra.com/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x1131"> <a href="images/profile/works-img011.jpg" class="img-wrap"><img src="images/profile/works-img011.jpg" alt="東聚國際食品有限公司" /></a>
+                <div class="description description--grid">
+                    <h3>東聚國際食品有限公司</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.e-rich.tw/" target="blank">http://www.e-rich.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1239x1280"> <a href="images/profile/works-img012.jpg" class="img-wrap"><img src="images/profile/works-img012.jpg" alt="均迪康科技有限公司" /></a>
+                <div class="description description--grid">
+                    <h3>均迪康科技有限公司</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.kantek.com.tw/" target="blank">http://www.kantek.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1085x1280"> <a href="images/profile/works-img013.jpg" class="img-wrap"><img src="images/profile/works-img013.jpg" alt="上群動物醫院" /></a>
+                <div class="description description--grid">
+                    <h3>上群動物醫院</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.shangqun.com.tw/" target="blank">http://www.shangqun.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="931x1280"> <a href="images/profile/works-img014.jpg" class="img-wrap"><img src="images/profile/works-img014.jpg" alt="KIC 生存遊戲專賣" /></a>
+                <div class="description description--grid">
+                    <h3>KIC 生存遊戲專賣</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://shop.kic.tw/" target="blank">http://shop.kic.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="877x1280"> <a href="images/profile/works-img015.jpg" class="img-wrap"><img src="images/profile/works-img015.jpg" alt="J-Mart佳瑪進口精品生活館" /></a>
+                <div class="description description--grid">
+                    <h3>J-Mart佳瑪進口精品生活館</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.j-mart.com.tw/" target="blank">http://www.j-mart.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2017年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：客製化</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="428x1280"> <a href="images/profile/works-img016.jpg" class="img-wrap"><img src="images/profile/works-img016.jpg" alt="邁迪爾媒體行銷有限公司" /></a>
+                <div class="description description--grid">
+                    <h3>邁迪爾媒體行銷有限公司</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.my-dear.com.tw/" target="blank">http://www.my-dear.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="427x1280"> <a href="images/profile/works-img017.jpg" class="img-wrap"><img src="images/profile/works-img017.jpg" alt="寰宇國際時尚美學館" /></a>
+                <div class="description description--grid">
+                    <h3>寰宇國際時尚美學館</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.uife.com.tw/" target="blank">http://www.uife.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="456x1280"> <a href="images/profile/works-img018.jpg" class="img-wrap"><img src="images/profile/works-img018.jpg" alt="愛面族" /></a>
+                <div class="description description--grid">
+                    <h3>愛面族</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.imu.com.tw/" target="blank">http://www.imu.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：客製化</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1063x1280"> <a href="images/profile/works-img019.jpg" class="img-wrap"><img src="images/profile/works-img019.jpg" alt="眾基健康科技股份有限公司" /></a>
+                <div class="description description--grid">
+                    <h3>眾基健康科技股份有限公司</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.eyt.com.tw/" target="blank">http://www.eyt.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x667"> <a href="images/profile/works-img020.jpg" class="img-wrap"><img src="images/profile/works-img020.jpg" alt="英爵室內設計" /></a>
+                <div class="description description--grid">
+                    <h3>英爵室內設計</h3>
+                    <p>PC版網站</p>
+                    <p class="weblink"><a href="http://www.enjoy-d.com.tw/" target="blank">http://www.enjoy-d.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：客製化</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x664"> <a href="images/profile/works-img021.jpg" class="img-wrap"><img src="images/profile/works-img021.jpg" alt="耐吉斯寵物食譜" /></a>
+                <div class="description description--grid">
+                    <h3>耐吉斯寵物食譜</h3>
+                    <p>PC版網站</p>
+                    <p class="weblink"><a href="http://www.hrspetfood.com/" target="blank">http://www.hrspetfood.com/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：客製化</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1086x1280"> <a href="images/profile/works-img022.jpg" class="img-wrap"><img src="images/profile/works-img022.jpg" alt="宣彥辦公用品" /></a>
+                <div class="description description--grid">
+                    <h3>宣彥辦公用品</h3>
+                    <p>PC版網站</p>
+                    <p class="weblink"><a href="http://www.23782121.com.tw/" target="blank">http://www.23782121.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="834x1280"> <a href="images/profile/works-img023.jpg" class="img-wrap"><img src="images/profile/works-img023.jpg" alt="東立漫遊網" /></a>
+                <div class="description description--grid">
+                    <h3>東立漫遊網</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.tongli.com.tw/" target="blank">http://www.tongli.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：客製化</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1146x1280"> <a href="images/profile/works-img024.jpg" class="img-wrap"><img src="images/profile/works-img024.jpg" alt="玖旺食品公司" /></a>
+                <div class="description description--grid">
+                    <h3>玖旺食品公司</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.sunnysyrup.com/" target="blank">http://www.sunnysyrup.com/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="582x1280"> <a href="images/profile/works-img025.jpg" class="img-wrap"><img src="images/profile/works-img025.jpg" alt="webdo RWD架網系統" /></a>
+                <div class="description description--grid">
+                    <h3>webdo RWD架網系統</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.webdo.cc/webdoRWD/" target="blank">http://www.webdo.cc/webdoRWD/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="852x1280"> <a href="images/profile/works-img026.jpg" class="img-wrap"><img src="images/profile/works-img026.jpg" alt="台南國際中學" /></a>
+                <div class="description description--grid">
+                    <h3>台南國際中學</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.2usa.org.tw/" target="blank">http://www.2usa.org.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x935"> <a href="images/profile/works-img027.jpg" class="img-wrap"><img src="images/profile/works-img027.jpg" alt="Lumtec" /></a>
+                <div class="description description--grid">
+                    <h3>Lumtec</h3>
+                    <p>PC版網站</p>
+                    <p class="weblink"><a href="http://www.lumtec.com.tw/" target="blank">http://www.lumtec.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="493x1280"> <a href="images/profile/works-img028.jpg" class="img-wrap"><img src="images/profile/works-img028.jpg" alt="Chance Villa 蒔裳花邑" /></a>
+                <div class="description description--grid">
+                    <h3>Chance Villa 蒔裳花邑</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.chancevilla.com/" target="blank">http://www.chancevilla.com/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="894x1280"> <a href="images/profile/works-img029.jpg" class="img-wrap"><img src="images/profile/works-img029.jpg" alt="358漆彈中心" /></a>
+                <div class="description description--grid">
+                    <h3>358漆彈中心</h3>
+                    <p>RWD響應式網站</p>
+                    <p class="weblink"><a href="http://www.358pc.com.tw/" target="blank">http://www.358pc.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2016年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：webdo維度</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="327x1280"> <a href="images/profile/works-img033.jpg" class="img-wrap"><img src="images/profile/works-img033.jpg" alt="Justin Davis Taiwan" /></a>
+                <div class="description description--grid">
+                    <h3>Justin Davis Taiwan</h3>
+                    <p>PC版網站</p>
+                    <p class="weblink"><a href="http://www.jd-taiwan.com.tw/" target="blank">http://www.jd-taiwan.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2013年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x887"> <a href="images/profile/works-img030.jpg" class="img-wrap"><img src="images/profile/works-img030.jpg" alt="魔術盒子餐飲行銷有限公司" /></a>
+                <div class="description description--grid">
+                    <h3>魔術盒子餐飲行銷有限公司</h3>
+                    <p>PC版網站</p>
+                    <p class="weblink"><a href="http://www.magicbox888.com/" target="blank">http://www.magicbox888.com/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2014年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x612"> <a href="images/profile/works-img031.jpg" class="img-wrap"><img src="images/profile/works-img031.jpg" alt="藻雅室內設計" /></a>
+                <div class="description description--grid">
+                    <h3>藻雅室內設計</h3>
+                    <p>PC版網站</p>
+                    <p class="weblink"><a href="http://www.indoor.com.tw/" target="blank">http://www.indoor.com.tw/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2013年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item" data-size="1280x830"> <a href="images/profile/works-img032.jpg" class="img-wrap"><img src="images/profile/works-img032.jpg" alt="優化日本株式會社" /></a>
+                <div class="description description--grid">
+                    <h3>優化日本株式會社</h3>
+                    <p>PC版網站</p>
+                    <p class="weblink"><a href="http://www.yuva.co.jp/" target="blank">http://www.yuva.co.jp/</a></p>
+                    <div class="details">
+                        <ul>
+                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>製作日期：2013年</span></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><span>系統：黑快馬</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="preview">
+            <button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+            <div class="description description--preview"></div>
+        </div>
+    </div>
+    <script src="script/jquery.panelslider.min.js"></script>
+    <script src="script/imagesloaded.pkgd.min.js"></script>
+    <script src="script/masonry.pkgd.min.js"></script>
+    <script src="script/classie.js"></script>
+    <script src="script/main.js"></script>
+    <script>
+    $('#about-link').panelslider();
+    (function() {
+        var support = { transitions: Modernizr.csstransitions },
+            // transition end event name
+            transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+            transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
+            onEndTransition = function(el, callback) {
+                var onEndCallbackFn = function(ev) {
+                    if (support.transitions) {
+                        if (ev.target != this) return;
+                        this.removeEventListener(transEndEventName, onEndCallbackFn);
+                    }
+                    if (callback && typeof callback === 'function') { callback.call(this); }
+                };
+                if (support.transitions) {
+                    el.addEventListener(transEndEventName, onEndCallbackFn);
+                } else {
+                    onEndCallbackFn();
+                }
+            };
+
+        new GridFx(document.querySelector('.grid'), {
+            imgPosition: {
+                x: -0.5,
+                y: 1
+            },
+            onOpenItem: function(instance, item) {
+                instance.items.forEach(function(el) {
+                    if (item != el) {
+                        var delay = Math.floor(Math.random() * 50);
+                        el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+                        el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+                        el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
+                        el.style.transform = 'scale3d(0.1,0.1,1)';
+                        el.style.opacity = 0;
+                    }
+                });
+            },
+            onCloseItem: function(instance, item) {
+                instance.items.forEach(function(el) {
+                    if (item != el) {
+                        el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
+                        el.style.transition = 'opacity .4s, transform .4s';
+                        el.style.WebkitTransform = 'scale3d(1,1,1)';
+                        el.style.transform = 'scale3d(1,1,1)';
+                        el.style.opacity = 1;
+
+                        onEndTransition(el, function() {
+                            el.style.transition = 'none';
+                            el.style.WebkitTransform = 'none';
+                        });
+                    }
+                });
+            }
+        });
+    })();
+    </script>
+</body>
+
+</html>
