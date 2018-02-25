@@ -1,0 +1,210 @@
+//圓弧效果  @include border-radius(50px);   
+//區塊陰影  @include box-shadow(30px 30px 30px #000);   
+//背景漸層  @include background(linear-gradient(white,black));
+//透明度  @include opacity(0.2);
+//@include container(); 渲染  
+//@include full;width: 100%;
+
+/*首內頁共用設定*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+div {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+// html,
+// body {
+//     height: 100%;
+//     margin: 0px;
+//     padding: 0px;
+// }
+body {
+    // overflow-x: hidden;
+    font: 100%/1.5 $font-family;
+    background: #f9f9f9;
+    @include transition(transform .2s);
+    width: 100%;
+}
+
+//左側
+#profile {
+    z-index: 0;
+    position: relative;
+    height: auto;
+    width: auto;
+    background: none;
+    left: auto;
+    top: auto;
+    @include _break("wide") {
+        width: 300px;
+        background: #ffffff;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+}
+
+#logo {
+    @include span(full);
+    text-align: center;
+    margin: 30px 0 20px 0;
+    img {
+        height: 60px!important;
+    }
+}
+
+body.ps-active {
+    @include transform(translateX(300px));
+    @include _break("wide") {
+        @include transform(translateX(0px));
+    }
+}
+
+#about-link {
+    display: block;
+    float: left;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    text-align: left;
+    background: #1a1a1a;
+    color: #fff;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-size: 15px;
+    padding: 5px 10px;
+    line-height: normal;
+    &:before {
+        @extend %fa;
+        content: "\f038";
+        font-size: 12px;
+        margin: 0 6px 0 0;
+    }
+    @include _break("wide") {
+        display: none;
+    }
+}
+
+#about {
+    .about-img {
+        text-align: center;
+        line-height: 0;
+        img {
+            height: 120px!important;
+            @include border-radius(50%);
+        }
+    }
+    .about-info {
+        padding: 0 25px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #3f3f3f;
+        font-weight: 300;
+        letter-spacing: 0.25px;
+        h2 {
+            text-align: center;
+            font-family: 'Mukta Mahee', sans-serif;
+            font-size: 24px;
+            color: #1a1a1a;
+            padding: 20px 0 15px 0;
+        }
+    }
+    .about-txt {
+        margin: 0 0 25px 0;
+        word-break: break-word;
+        p {
+            margin: 0 0 10px 0;
+        }
+    }
+    .contact {
+        li {
+            margin: 0 0 10px 0;
+        }
+        em {
+            display: block;
+            text-decoration: underline;
+        }
+    }
+    .foot-copy {
+        color: #a0a0a0;
+        font-family: 'Mukta Mahee', sans-serif;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 13px;
+    }
+}
+
+.panel {
+    width: 300px;
+    background: #ffffff;
+    padding: 20px 0 0 0;
+    display: none;
+    @include _break("wide") {
+        width: 100%;
+        background: none;
+        position: relative!important;
+        left: auto!important;
+        top: auto;
+        padding: 0;
+        display: block!important;
+        height: 100%;
+    }
+}
+
+#works {
+    top: 0;
+    z-index: 0;
+    position: relative;
+    padding-left: 0;
+    clear: both;
+    @include _break("wide") {
+        padding-left: 300px;
+        clear: none;
+        z-index: 0;
+    }
+    .works-title {
+        text-align: center;
+        color: #1a1a1a;
+        font-family: 'Mukta Mahee', sans-serif;
+        font-size: 18px;
+        padding: 0 0 20px 0;
+        @include _break("wide") {
+            padding: 40px 0 20px 0;
+        }
+        &:before {
+            content: '';
+            display: inline-block;
+            border-bottom: #1a1a1a solid 1px;
+            width: 15px;
+            margin: 0 2px 0 0;
+        }
+    }
+}
+
+.img-wrap {
+    img {
+        @include filter(grayscale, 100%);
+        &:hover {
+            @include filter(grayscale, 0%);
+        }
+    }
+}

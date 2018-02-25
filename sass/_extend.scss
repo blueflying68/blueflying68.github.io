@@ -1,0 +1,12 @@
+/*字體*/
+$font-family:'Noto Sans TC', sans-serif;
+
+/*font awesome*/
+%fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome; 
+  text-rendering: auto; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); 
+}

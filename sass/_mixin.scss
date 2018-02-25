@@ -1,0 +1,43 @@
+//設定4種尺寸
+$break_layout: ( 
+    tiny: ( break: 0px, layout: 4), 
+    small: ( break: 480px, layout: 4), 
+    med: ( break: 640px, layout: 8), 
+    large: ( break: 768px, layout: 12), 
+    wide: ( break: 1024px, layout: 12), 
+    huge: ( break: 1280px, layout: 12)
+);
+//自訂斷點
+@mixin _break($screen: small) {
+    $map: map-get($break_layout, $screen);
+    $break: map-get($map, "break");
+    $layout: map-get($map, "layout");
+    @include susy-breakpoint($break, $layout) {
+        @content;
+    }
+}
+
+@mixin clearfix {
+    &:after,
+    &:before {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    *zoom:1;
+}
+
+@mixin text-hide {
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+@mixin selection {
+    //反選
+    color: #fff;
+    text-shadow: none;
+    background-color: $selection;
+}
