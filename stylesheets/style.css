@@ -152,7 +152,7 @@ div {
 
 /* line 37, ../sass/module/_layout.scss */
 body {
-  font: 100%/1.5 "Noto Sans TC", sans-serif;
+  font: 100%/1.5 "微軟正黑體", sans-serif;
   background: #f9f9f9;
   -moz-transition: -moz-transform 0.2s;
   -o-transition: -o-transform 0.2s;
@@ -262,10 +262,9 @@ body.ps-active {
   font-size: 14px;
   line-height: 20px;
   color: #3f3f3f;
-  font-weight: 300;
   letter-spacing: 0.25px;
 }
-/* line 120, ../sass/module/_layout.scss */
+/* line 119, ../sass/module/_layout.scss */
 #about .about-info h2 {
   text-align: center;
   font-family: 'Mukta Mahee', sans-serif;
@@ -273,25 +272,25 @@ body.ps-active {
   color: #1a1a1a;
   padding: 20px 0 15px 0;
 }
-/* line 128, ../sass/module/_layout.scss */
+/* line 127, ../sass/module/_layout.scss */
 #about .about-txt {
   margin: 0 0 25px 0;
   word-break: break-word;
 }
-/* line 131, ../sass/module/_layout.scss */
+/* line 130, ../sass/module/_layout.scss */
 #about .about-txt p {
   margin: 0 0 10px 0;
 }
-/* line 136, ../sass/module/_layout.scss */
+/* line 135, ../sass/module/_layout.scss */
 #about .contact li {
   margin: 0 0 10px 0;
 }
-/* line 139, ../sass/module/_layout.scss */
+/* line 138, ../sass/module/_layout.scss */
 #about .contact em {
   display: block;
   text-decoration: underline;
 }
-/* line 144, ../sass/module/_layout.scss */
+/* line 143, ../sass/module/_layout.scss */
 #about .foot-copy {
   color: #a0a0a0;
   font-family: 'Mukta Mahee', sans-serif;
@@ -303,7 +302,7 @@ body.ps-active {
   font-size: 13px;
 }
 
-/* line 156, ../sass/module/_layout.scss */
+/* line 155, ../sass/module/_layout.scss */
 .panel {
   width: 300px;
   background: #ffffff;
@@ -311,7 +310,7 @@ body.ps-active {
   display: none;
 }
 @media (min-width: 1024px) {
-  /* line 156, ../sass/module/_layout.scss */
+  /* line 155, ../sass/module/_layout.scss */
   .panel {
     width: 100%;
     background: none;
@@ -324,7 +323,7 @@ body.ps-active {
   }
 }
 
-/* line 173, ../sass/module/_layout.scss */
+/* line 172, ../sass/module/_layout.scss */
 #works {
   top: 0;
   z-index: 0;
@@ -333,14 +332,14 @@ body.ps-active {
   clear: both;
 }
 @media (min-width: 1024px) {
-  /* line 173, ../sass/module/_layout.scss */
+  /* line 172, ../sass/module/_layout.scss */
   #works {
-    padding-left: 300px;
+    margin-left: 300px;
     clear: none;
     z-index: 0;
   }
 }
-/* line 184, ../sass/module/_layout.scss */
+/* line 183, ../sass/module/_layout.scss */
 #works .works-title {
   text-align: center;
   color: #1a1a1a;
@@ -349,12 +348,12 @@ body.ps-active {
   padding: 0 0 20px 0;
 }
 @media (min-width: 1024px) {
-  /* line 184, ../sass/module/_layout.scss */
+  /* line 183, ../sass/module/_layout.scss */
   #works .works-title {
     padding: 40px 0 20px 0;
   }
 }
-/* line 193, ../sass/module/_layout.scss */
+/* line 192, ../sass/module/_layout.scss */
 #works .works-title:before {
   content: '';
   display: inline-block;
@@ -363,7 +362,7 @@ body.ps-active {
   margin: 0 2px 0 0;
 }
 
-/* line 204, ../sass/module/_layout.scss */
+/* line 203, ../sass/module/_layout.scss */
 .img-wrap img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -371,7 +370,7 @@ body.ps-active {
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 206, ../sass/module/_layout.scss */
+/* line 205, ../sass/module/_layout.scss */
 .img-wrap img:hover {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);

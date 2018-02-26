@@ -115,7 +115,6 @@ body.ps-active {
         font-size: 14px;
         line-height: 20px;
         color: #3f3f3f;
-        font-weight: 300;
         letter-spacing: 0.25px;
         h2 {
             text-align: center;
@@ -177,7 +176,7 @@ body.ps-active {
     padding-left: 0;
     clear: both;
     @include _break("wide") {
-        padding-left: 300px;
+        margin-left: 300px;
         clear: none;
         z-index: 0;
     }
