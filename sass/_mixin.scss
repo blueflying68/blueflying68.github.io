@@ -1,11 +1,19 @@
 //設定4種尺寸
 $break_layout: ( 
+<<<<<<< HEAD
     tiny: ( break: 0px, layout: 4), 
     small: ( break: 480px, layout: 4), 
     med: ( break: 640px, layout: 8), 
     large: ( break: 768px, layout: 12), 
     wide: ( break: 1024px, layout: 12), 
     huge: ( break: 1280px, layout: 12)
+=======
+    extra_small: ( break: 0px, layout: 12), 
+    small: ( break: 576px, layout: 12), 
+    med: ( break: 768px, layout: 12), 
+    large: ( break: 992px, layout: 12), 
+    extra_large: ( break: 1200px, layout: 12)
+>>>>>>> 6315e33 (modify)
 );
 //自訂斷點
 @mixin _break($screen: small) {
@@ -40,4 +48,8 @@ $break_layout: (
     color: #fff;
     text-shadow: none;
     background-color: $selection;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6315e33 (modify)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*字體*/
 $font-family:'微軟正黑體', sans-serif;
 
@@ -9,4 +10,21 @@ $font-family:'微軟正黑體', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0); 
+=======
+//字體
+$font-family:'Noto Sans TC','Montserrat',sans-serif;
+
+//icofont
+%fa {
+    font-family: 'IcoFont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+>>>>>>> 6315e33 (modify)
 }
