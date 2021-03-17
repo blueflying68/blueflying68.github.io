@@ -119,7 +119,18 @@ function delayMouseFollow() {
     }
 }
 delayMouseFollow();
-//loading
-window.onload = function() {
-    $("#preloader-load").attr('class', 'loaded');
-}
+//gotop
+$(function() {
+    $("#gotop").click(function() {
+        jQuery("html,body").animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 150) {
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
