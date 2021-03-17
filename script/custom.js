@@ -41,11 +41,12 @@ $(function() {
     });
 });
 //isotope
-$(window).load(function() {
-    var $grid = $(".portfolio-wrap .row").isotope({
-        itemSelector: ".col-lg-4",
-        layoutMode: "fitRows"
-    });
+var $grid = $(".portfolio-wrap .row").isotope({
+    itemSelector: ".col-lg-4",
+    layoutMode: "fitRows"
+});
+$grid.imagesLoaded().progress(function() {
+    $grid.isotope('layout');
 });
 $(".portfolio-filter").on("click", "a", function() {
     var filterValue = $(this).attr("data-filter");
