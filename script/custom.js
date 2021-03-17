@@ -15,6 +15,7 @@ window.onscroll = function() {
 };
 var header = document.getElementById('h-opened');
 var sticky = header.offsetTop;
+
 function headerAnimate() {
     if (window.pageYOffset > sticky) {
         header.classList.add('animate');
@@ -40,14 +41,17 @@ $(function() {
     });
 });
 //isotope
-var $grid = $(".portfolio-wrap .row").isotope({
-    itemSelector: ".col-lg-4",
-    layoutMode: "fitRows"
+$(window).load(function() {
+    var $grid = $(".portfolio-wrap .row").isotope({
+        itemSelector: ".col-lg-4",
+        layoutMode: "fitRows"
+    });
 });
-
 $(".portfolio-filter").on("click", "a", function() {
     var filterValue = $(this).attr("data-filter");
-    $grid.isotope({ filter: filterValue });
+    $grid.isotope({
+        filter: filterValue
+    });
 });
 //portfolio menubar
 var list = $('.portfolio-filter ul li');
