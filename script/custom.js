@@ -120,15 +120,6 @@ function delayMouseFollow() {
 }
 delayMouseFollow();
 //loading
-// function preloader_load() {
-//     setTimeout(function() {
-//         $("#preloader-load").attr('class', 'loaded');
-//     }, 3500);
-// }
-// jQuery(window).load(function() {
-//     preloader_load();
-// });
-
 window.onload = function() {
     $("#preloader-load").attr('class', 'loaded');
 }

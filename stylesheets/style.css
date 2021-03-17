@@ -689,6 +689,11 @@ footer .footer-copy {
     white-space: pre;
   }
 }
+@media (min-width: 576px) {
+  .section-banner .slogan .container #typed br {
+    display: none;
+  }
+}
 .section-banner .slogan .container .text {
   opacity: 1;
   position: absolute;
